@@ -9,8 +9,8 @@ project = 'IP2Location.io Lua SDK'
 copyright = '2024, IP2Location'
 author = 'IP2Location'
 
-release = '1.0.0'
-version = '1.0.0'
+release = '1.0.1'
+version = '1.0.1'
 
 # -- General configuration
 

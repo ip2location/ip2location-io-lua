@@ -66,6 +66,7 @@ print("district: " .. result.district)
 print("ads_category: " .. result.ads_category)
 print("ads_category_name: " .. result.ads_category_name)
 print("is_proxy: " .. tostring(result.is_proxy))
+print("fraud_score: " .. result.fraud_score)
 
 -- continent addon
 if result["continent"] ~= nil then

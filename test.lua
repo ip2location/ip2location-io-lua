@@ -46,6 +46,7 @@ print("district: " .. result.district)
 print("ads_category: " .. result.ads_category)
 print("ads_category_name: " .. result.ads_category_name)
 print("is_proxy: " .. tostring(result.is_proxy))
+print("fraud_score: " .. result.fraud_score)
 
 -- continent addon
 if result["continent"] ~= nil then
@@ -123,6 +124,16 @@ if result["proxy"] ~= nil then
   print("proxy => proxy_type: " .. result.proxy.proxy_type)
   print("proxy => threat: " .. result.proxy.threat)
   print("proxy => provider: " .. result.proxy.provider)
+  print("proxy => is_vpn: " .. tostring(result.proxy.is_vpn))
+  print("proxy => is_tor: " .. tostring(result.proxy.is_tor))
+  print("proxy => is_data_center: " .. tostring(result.proxy.is_data_center))
+  print("proxy => is_public_proxy: " .. tostring(result.proxy.is_public_proxy))
+  print("proxy => is_web_proxy: " .. tostring(result.proxy.is_web_proxy))
+  print("proxy => is_web_crawler: " .. tostring(result.proxy.is_web_crawler))
+  print("proxy => is_residential_proxy: " .. tostring(result.proxy.is_residential_proxy))
+  print("proxy => is_spammer: " .. tostring(result.proxy.is_spammer))
+  print("proxy => is_scanner: " .. tostring(result.proxy.is_scanner))
+  print("proxy => is_botnet: " .. tostring(result.proxy.is_botnet))
 end
 
 print("====================================================================================")

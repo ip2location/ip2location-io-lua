@@ -65,6 +65,7 @@ print("district: " .. result.district)
 print("ads_category: " .. result.ads_category)
 print("ads_category_name: " .. result.ads_category_name)
 print("is_proxy: " .. tostring(result.is_proxy))
+print("fraud_score: " .. result.fraud_score)
 
 -- continent addon
 if result["continent"] ~= nil then
@@ -327,6 +328,7 @@ Response Parameter
 |ads_category|string|The domain category code based on IAB Tech Lab Content Taxonomy.|
 |ads_category_name|string|The domain category based on IAB Tech Lab Content Taxonomy. These categories are comprised of Tier-1 and Tier-2 (if available) level categories widely used in services like advertising, Internet security and filtering appliances.|
 |is_proxy|boolean|Whether is a proxy or not.|
+|fraud_score|integer|Potential risk score (0 - 99) associated with IP address. A higher IP2Proxy Fraud Score indicates a greater likelihood of fraudulent activity and a lower reputation.|
 |proxy.last_seen|integer|Proxy last seen in days.|
 |proxy.proxy_type|string|Type of proxy.|
 |proxy.threat|string|Security threat reported.|
@@ -434,6 +436,7 @@ Response Parameter
   "ads_category": "IAB19-11",
   "ads_category_name": "Data Centers",
   "is_proxy": false,
+  "fraud_score": 0,
   "proxy": {
     "last_seen": 3,
     "proxy_type": "DCH",
