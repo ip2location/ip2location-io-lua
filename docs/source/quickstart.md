@@ -283,3 +283,28 @@ local whois = domainwhois:open(configuration)
 
 print(whois:getdomainextension("example.com"))
 ```
+
+### Lookup IP Address Hosted Domains Data
+
+You can lookup hosted domains information as below:
+
+```lua
+local configuration = require("configuration")
+local hosteddomain = require("hosteddomain")
+
+local apikey = "YOUR_API_KEY"
+
+configuration.api_key = apikey
+local ip = "8.8.8.8"
+local hd = hosteddomain:open(configuration)
+
+local result = hd:lookup(ip)
+
+print("version: " .. configuration.version)
+print("ip: " .. result.ip)
+print("total_domains: " .. result.total_domains)
+print("page: " .. result.page)
+print("per_page: " .. result.per_page)
+print("total_pages: " .. result.total_pages)
+print("domains: " .. table.concat(result.domains, ","))
+```

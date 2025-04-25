@@ -3,6 +3,7 @@
 local configuration = require("configuration")
 local ipgeolocation = require("ipgeolocation")
 local domainwhois = require("domainwhois")
+local hosteddomain = require("hosteddomain")
 
 local apikey = "YOUR_API_KEY"
 
@@ -210,3 +211,18 @@ print(whois:getnormaltext("xn--tst-qla.de"))
 print(whois:getdomainname("https://www.example.com/exe"))
 
 print(whois:getdomainextension("example.com"))
+
+print("====================================================================================")
+
+local ip = "8.8.8.8"
+local hd = hosteddomain:open(configuration)
+
+local result = hd:lookup(ip)
+
+print("version: " .. configuration.version)
+print("ip: " .. result.ip)
+print("total_domains: " .. result.total_domains)
+print("page: " .. result.page)
+print("per_page: " .. result.per_page)
+print("total_pages: " .. result.total_pages)
+print("domains: " .. table.concat(result.domains, ","))
