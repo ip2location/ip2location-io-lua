@@ -129,6 +129,9 @@ if result["time_zone_info"] ~= nil then
   print("time_zone_info => current_time: " .. result.time_zone_info.current_time)
   print("time_zone_info => gmt_offset: " .. result.time_zone_info.gmt_offset)
   print("time_zone_info => is_dst: " .. tostring(result.time_zone_info.is_dst))
+  print("time_zone_info => abbreviation: " .. tostring(result.time_zone_info.abbreviation))
+  print("time_zone_info => dst_start_date: " .. tostring(result.time_zone_info.dst_start_date))
+  print("time_zone_info => dst_end_date: " .. tostring(result.time_zone_info.dst_end_date))
   print("time_zone_info => sunrise: " .. result.time_zone_info.sunrise)
   print("time_zone_info => sunset: " .. result.time_zone_info.sunset)
 end
