@@ -68,6 +68,15 @@ print("ads_category_name: " .. result.ads_category_name)
 print("is_proxy: " .. tostring(result.is_proxy))
 print("fraud_score: " .. result.fraud_score)
 
+-- as_info addon
+if result["as_info"] ~= nil then
+  print("as_info => as_name: " .. result.as_info.as_name)
+  print("as_info => as_number: " .. result.as_info.as_number)
+  print("as_info => as_domain: " .. table.concat(result.as_info.as_domain, ","))
+  print("as_info => as_cidr: " .. table.concat(result.as_info.as_cidr, ","))
+  print("as_info => as_usage_type: " .. table.concat(result.as_info.as_usage_type, ","))
+end
+
 -- continent addon
 if result["continent"] ~= nil then
   print("continent => name: " .. result.continent.name)
