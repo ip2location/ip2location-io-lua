@@ -162,6 +162,7 @@ if result["proxy"] ~= nil then
   print("proxy => is_public_proxy: " .. tostring(result.proxy.is_public_proxy))
   print("proxy => is_web_proxy: " .. tostring(result.proxy.is_web_proxy))
   print("proxy => is_web_crawler: " .. tostring(result.proxy.is_web_crawler))
+  print("proxy => is_ai_crawler: " .. tostring(result.proxy.is_ai_crawler))
   print("proxy => is_residential_proxy: " .. tostring(result.proxy.is_residential_proxy))
   print("proxy => is_consumer_privacy_network: " .. tostring(result.proxy.is_consumer_privacy_network))
   print("proxy => is_enterprise_private_network: " .. tostring(result.proxy.is_enterprise_private_network))
