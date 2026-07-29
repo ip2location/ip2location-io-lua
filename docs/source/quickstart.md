@@ -6,12 +6,12 @@ This module requires API key to function. You may sign up for a free API key at 
 
 ## Installation
 
-To install this library using luarocks:
+To install this library:
 
 ```bash
-
+apt install -y libidn-dev
+luarocks install --server=https://luarocks.org/dev lua-nums
 luarocks install ip2locationio
-
 ```
 
 ## Sample Codes
