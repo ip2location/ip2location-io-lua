@@ -1,6 +1,5 @@
 # IP2Location.io Lua SDK — IP Geolocation, Domain WHOIS & Hosted Domain Lookup
-
-[![LuaRocks](https://img.shields.io/luarocks/v/ip2locationio)](https://luarocks.org/modules/ip2location/ip2locationio)
+[![LuaRocks](https://img.shields.io/badge/LuaRocks-1.1.0--1-blue)](https://luarocks.org/modules/ip2location/ip2locationio)
 
 **IP2Location.io Lua SDK** is a Lua library for retrieving **IPv4 and IPv6 geolocation, network and IP intelligence data** through the [IP2Location.io API](https://www.ip2location.io/). It also supports **domain WHOIS lookup** and **hosted domain lookup**. Use the SDK to integrate IP and domain information into Lua applications without manually constructing API requests.
 
